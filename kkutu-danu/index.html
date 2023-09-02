@@ -20,7 +20,11 @@
 function gid(sele) {
   return document.getElementById(sele);
 }
-
+window.onkeydown = function(e) {
+    if (e.keycode == 13) {
+        gid("find").click()
+    }
+}
 gid("find").onclick = function() {
   var isFound = false;
 
